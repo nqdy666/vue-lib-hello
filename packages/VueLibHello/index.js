@@ -6,5 +6,3 @@ VueLibHello.install = function(Vue) {
   Vue.component(VueLibHello.name, VueLibHello)
 }
 export default VueLibHello
-
-console.log('afsd')

@@ -18,7 +18,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint packages/**/* examples/**/*",
     "lint:fix": "npm run lint -- --fix",
-    "lib": "vue-cli-service build --target lib --name vue-lib-hello --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name vue-lib-hello --dest lib packages/index.js && rimraf ./lib/demo.html",
     "release": "npm run lib && standard-version"
   },
   "dependencies": {
@@ -34,6 +34,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "lodash": "^4.17.15",
+    "replace-in-file": "^6.0.0",
     "rimraf": "^3.0.2",
     "standard-version": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
