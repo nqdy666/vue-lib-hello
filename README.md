@@ -37,4 +37,5 @@ git push --follow-tags origin master && npm publish
 ## todo
 
 - [ ] 增加test
-- [ ] 完善readme
+- [ ] 支持ts
+- [ ] 完善文档
