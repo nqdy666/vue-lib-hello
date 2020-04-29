@@ -8,7 +8,6 @@
   "license": "MIT",
   "files": [
     "packages",
-    "dist",
     "lib",
     "types"
   ],
@@ -17,12 +16,13 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name vue-lib-hello --dest lib packages/index.js"
+    "lint": "vue-cli-service lint packages/**/* examples/**/*",
+    "lint:fix": "npm run lint -- --fix",
+    "lib": "vue-cli-service build --target lib --name vue-lib-hello --dest lib packages/index.js",
+    "release": "npm run lib && standard-version"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "rimraf": "^3.0.2",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -34,6 +34,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "standard-version": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   },
   "repository": {
