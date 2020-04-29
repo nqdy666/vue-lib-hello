@@ -1,6 +1,6 @@
 {
   "name": "vue-lib-hello",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "nianqin",
   "description": "A modern vue library scaffolding",
   "main": "lib/vue-lib-hello.umd.min.js",
