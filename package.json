@@ -12,6 +12,7 @@
     "types"
   ],
   "scripts": {
+    "rename": "node ./rename.js",
     "clean": "rimraf ./dist ./lib",
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
