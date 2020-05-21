@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "author": "nianqin",
   "description": "A modern vue library scaffolding",
-  "main": "lib/vue-lib-hello.umd.min.js",
+  "main": "lib/vueLibHello.umd.min.js",
   "private": false,
   "license": "MIT",
   "files": [
@@ -19,7 +19,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint packages/**/* examples/**/*",
     "lint:fix": "npm run lint -- --fix",
-    "lib": "vue-cli-service build --target lib --name vue-lib-hello --dest lib packages/index.js && rimraf ./lib/demo.html",
+    "lib": "vue-cli-service build --target lib --name vueLibHello --dest lib packages/index.js && rimraf ./lib/demo.html",
     "release": "npm run lib && standard-version"
   },
   "dependencies": {

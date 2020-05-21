@@ -16,6 +16,7 @@ function getFullPath(filename) {
 var options = {
   files: [
     getFullPath('!(rename.js)*'),
+    getFullPath('.eslintrc.js'),
     getFullPath('!(lib|node_modules|dist)*/**')
   ],
   from: [

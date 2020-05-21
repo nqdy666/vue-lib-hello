@@ -14,6 +14,6 @@ module.exports = {
     parser: 'babel-eslint'
   },
   globals: {
-    VueLibHello: false
+    vueLibHello: false
   }
 }
